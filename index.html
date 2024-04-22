@@ -1,219 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/favicon.ico" />
     <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/2959c5c41c.js" crossorigin="anonymous"></script>
-
-</head>
-<body>
-<!--------------------header------------------------->
+    <script
+      src="https://kit.fontawesome.com/2959c5c41c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--------------------header------------------------->
     <div id="header">
-        <div class="container">
-            
-            <nav>
-               <h3 class="logo">Port<span>folio</span></h3> 
-               <ul id="sidemenu">
-                    <li><a href="#heder">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#internships">Internships</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-               </ul>
-               <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <!--<p>UI/UX Designer</p>-->
-                <h1>Hi, I'am <br><span>Divya</span> Inturi</h1>
-            </div>
+      <div class="container">
+        <nav>
+          <h3 class="logo">Port<span>folio</span></h3>
+          <ul id="sidemenu">
+            <li><a href="#heder">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#internships">Internships</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <!--<p>UI/UX Designer</p>-->
+          <h1>Hi, I'am <br /><span>Divya</span> Inturi</h1>
         </div>
+      </div>
     </div>
 
-<!---------------about------------------->
+    <!---------------about------------------->
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/background_img.jpeg">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Hi, My name is Divya. I want to be a passionate <span>Frontend Developer</span> 
-                    with a keen eye for detail and a love for crafting seamless user experiences. 
-                    I have honed my skills in HTML, CSS, and JavaScript to transform 
-                    design concepts into elegant, responsive web interfaces.</p>
-                    
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                        <p class="tab-links" onclick="opentab('strenghts')">Strenghts</p>
-                        <p class="tab-links" onclick="opentab('personal info')">Personal Info</p>
-                        
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Programming</span><br>C, Python, Java</li>
-                            <li><span>Web Technologies</span><br>HTML, CSS, Javascript, React.js</li>
-                            <li><span>Tools</span><br>Git</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2021-2024</span><br>Bachelors of Technology<br>ECE<br>CGPA : 8.44</li>
-                            <li><span>2018-2021</span><br>Diploma<br>ECE<br>Percentage : 94%</li>
-                            <li><span>2018</span><br>SSC<br>CGPA : 9.0</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="strenghts">
-                        <ul>
-                            <li>Dedicated towards my work</li>
-                            <li>Positive Attitude</li>
-                            <li>Punctuality</li>
-                            <li>Problem Solving</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="personal info">
-                        <ul>
-                            <li><span>Gender</span><br>Female</li>
-                            <li><span>Hobbies</span><br>Drawing<br>Listening to Music</li>
-                            <li><span>Languages</span><br>English<br>Telugu</li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/background_img.jpeg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi, My name is Divya. I want to be a passionate
+              <span>Frontend Developer</span> with a keen eye for detail and a
+              love for crafting seamless user experiences. I have honed my
+              skills in HTML, CSS, and JavaScript to transform design concepts
+              into elegant, responsive web interfaces.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('strenghts')">Strenghts</p>
+              <p class="tab-links" onclick="opentab('personal info')">
+                Personal Info
+              </p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Programming</span><br />C, Python, Java</li>
+                <li>
+                  <span>Web Technologies</span><br />HTML, CSS, Javascript,
+                  React.js
+                </li>
+                <li><span>Tools</span><br />Git</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021-2024</span><br />Bachelors of Technology<br />ECE<br />CGPA
+                  : 8.44
+                </li>
+                <li>
+                  <span>2018-2021</span><br />Diploma<br />ECE<br />Percentage :
+                  94%
+                </li>
+                <li><span>2018</span><br />SSC<br />CGPA : 9.0</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="strenghts">
+              <ul>
+                <li>Dedicated towards my work</li>
+                <li>Positive Attitude</li>
+                <li>Punctuality</li>
+                <li>Problem Solving</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="personal info">
+              <ul>
+                <li><span>Gender</span><br />Female</li>
+                <li>
+                  <span>Hobbies</span><br />Drawing<br />Listening to Music
+                </li>
+                <li><span>Languages</span><br />English<br />Telugu</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-<!--------------Projects--------------------> 
+    <!--------------Projects-------------------->
     <div id="projects">
-        <div class="container">
-            <h1 class="sub-title">My Projects</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/ttos.jpg">  
-                    <div class="layer">
-                        <h3>Text to Speech Converter App</h3>
-                        <p>Using HTML, CSS, JavaScript</p>
-                        <a href=" https://divyainturi.github.io/Text-to-Speech-Converter-App/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>  
-                </div>
-                <div class="work">
-                    <img src="images/todolist.jpg">  
-                    <div class="layer">
-                        <h3>To Do List App</h3>
-                        <p>Using HTML, CSS, JavaScript</p>
-                        <a href=" https://divyainturi.github.io/To-Do-List-App/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>    
-                </div>
-                <div class="work">
-                    <img src="images/memory.png">
-                    <div class="layer">
-                        <h3>Memory Game App</h3>
-                        <p>Using HTML, CSS, JavaScript</p>
-                        <a href=" https://divyainturi.github.io/Memory-Game-App/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>      
-                </div>
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/ttos.jpg" />
+            <div class="layer">
+              <h3>Text to Speech Converter App</h3>
+              <p>Using HTML, CSS, JavaScript</p>
+              <a
+                href=" https://divyainturi.github.io/Text-to-Speech-Converter-App/"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             </div>
-            
+          </div>
+          <div class="work">
+            <img src="images/todolist.jpg" />
+            <div class="layer">
+              <h3>To Do List App</h3>
+              <p>Using HTML, CSS, JavaScript</p>
+              <a
+                href=" https://divyainturi.github.io/To-Do-List-App/"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/memory.png" />
+            <div class="layer">
+              <h3>Memory Game App</h3>
+              <p>Using HTML, CSS, JavaScript</p>
+              <a
+                href=" https://divyainturi.github.io/Memory-Game-App/"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-<!---------------------Internships-------------------->
+    <!---------------------Internships-------------------->
     <div id="internships">
-        <div class="container">
-            <h1 class="sub-title">My Internships</h1>
-            <div class="internships-list">
-                <div>
-                    <h2>Embedded Systems Designing Concepts</h2>
-                    <p>During this internship I gained some knowledge 
-                        on Introduction to Embedded Systems,  
-                        Embedded Programming Fundamentals,  
-                        Hardware Interfacing.</p>
-                    <a href="images/embedded.jpeg" class="sub" target="_blank">See my Certificate</a>
-                </div>
-                <div>
-                    <h2>Data Structures and Algorithms</h2>
-                    <p>During this internship I gained some knowledge on 
-                        Introduction to Algorithms, Single and Double Dimensional Arrays, 
-                        Searching and Sorting, Stacks and Queues, 
-                        Revision of relevant topics in C, Implementation programs of Stacks and Queues, 
-                        Linear linked list, Circular linked list, 
-                        Doubly linked list, Trees, and Graphs modules.</p>
-                    <a href="images/data.jpeg" class="sub" target="_blank">See my Certificate</a>
-                </div>
-                <div>
-                    <h2>VLSI Signal Processing</h2>
-                    <p>During this internship I gained some knowledge 
-                        on Introduction to VLSI and Signal Processing,  
-                        Digital Signal Processing Basics, VLSI Design Fundamentals.</p>
-                    <a href="images/vlsi.jpeg" class="sub" target="_blank">See my Certificate</a>
-                </div>
-            </div>
+      <div class="container">
+        <h1 class="sub-title">My Internships</h1>
+        <div class="internships-list">
+          <div>
+            <h2>Embedded Systems Designing Concepts</h2>
+            <p>
+              During this internship I gained some knowledge on Introduction to
+              Embedded Systems, Embedded Programming Fundamentals, Hardware
+              Interfacing.
+            </p>
+            <a href="images/embedded.jpeg" class="sub" target="_blank"
+              >See my Certificate</a
+            >
+          </div>
+          <div>
+            <h2>Data Structures and Algorithms</h2>
+            <p>
+              During this internship I gained some knowledge on Introduction to
+              Algorithms, Single and Double Dimensional Arrays, Searching and
+              Sorting, Stacks and Queues, Revision of relevant topics in C,
+              Implementation programs of Stacks and Queues, Linear linked list,
+              Circular linked list, Doubly linked list, Trees, and Graphs
+              modules.
+            </p>
+            <a href="images/data.jpeg" class="sub" target="_blank"
+              >See my Certificate</a
+            >
+          </div>
+          <div>
+            <h2>VLSI Signal Processing</h2>
+            <p>
+              During this internship I gained some knowledge on Introduction to
+              VLSI and Signal Processing, Digital Signal Processing Basics, VLSI
+              Design Fundamentals.
+            </p>
+            <a href="images/vlsi.jpeg" class="sub" target="_blank"
+              >See my Certificate</a
+            >
+          </div>
         </div>
+      </div>
     </div>
 
-<!--------------------contact---------------->
+    <!--------------------contact---------------->
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-envelope"></i> divyainturi777@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i> +91 8247798029</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/divya-inturi/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>    
-                    </div>
-                    <!--<a href="@@@@@" download class="btn btn2">Download Resume</a>-->
-                </div>
-                <div class="contact-left">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> divyainturi777@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +91 8247798029</p>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/divya-inturi/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/DivyaInturi" target="_blank"
+                ><i class="fa-brands fa-square-github"></i
+              ></a>
             </div>
+            <!--<a href="@@@@@" download class="btn btn2">Download Resume</a>-->
+          </div>
+          <div class="contact-left">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
-        <div class="copyright">
-            <p>Copyright @ Divya. Made with <i class="fa-solid fa-heart"></i> by me</p>
-        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright @ Divya. Made with <i class="fa-solid fa-heart"></i> by me
+        </p>
+      </div>
     </div>
 
-
-<script>
-    var sidemeu = document.getElementById("sidemenu");
-    function openmenu(){
+    <script>
+      var sidemeu = document.getElementById("sidemenu");
+      function openmenu() {
         sidemeu.style.right = "0";
-    }
-    function closemenu(){
+      }
+      function closemenu() {
         sidemeu.style.right = "-200px";
-    }
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwSJhMVgrMgQsL4X9Yb4_cY5tpWd_arVlgWZQpqLgnlhQ63a093ikFabBU8aNg9RV6w-g/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
 
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwSJhMVgrMgQsL4X9Yb4_cY5tpWd_arVlgWZQpqLgnlhQ63a093ikFabBU8aNg9RV6w-g/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-
-    form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Submitted successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-
-</script>
-</body>
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Submitted successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
 </html>
